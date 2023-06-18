@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./output/tailwind.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class="mx-auto container mb-6">
+        <nav class="flex bg-[#1090D81A] justify-between items-center p-4">
+            <div>
+                <h1 class="font-bold">Interactive </h1>
+                <h3>Geometry Genius</h3>
+            </div>
+            <div>
+                <button id="btn-blog" class="bg-[#1090D8] text-white font-bold px-4 p-2 rounded">Blog</button>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-auto container">
+        <section class="flex gap-4">
+            <section class="grid lg:grid-cols-3 grid-cols-2 gap-4">
+                <div class="text-center bg-[#FBBCED] p-11 flex flex-col items-center rounded-lg drop-shadow-md">
+                    <div class="mb-6">
+                        <img src="./images/triangle.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-2xl mb-4">Triangle</h2>
+                    <p class="mb-4">Area (A) = 0.5 X b X h</p>
+                    <div class="flex mb-4 items-center gap-4">
+                        <input id="triangle-b" class="w-14 p-2" type="number" placeholder="b">
+                        <span>cm</span>
+                        <input id="triangle-h" class="w-14 p-2" type="number" placeholder="h">
+                        <span>cm</span>
+                    </div>
+                    <button id="btn-triangle" class="bg-[#1090D8] text-white font-bold px-11 py-3 rounded-lg">Calculate</button>
+                </div>
+                <div class="text-center border-2 p-11 flex flex-col items-center rounded-lg drop-shadow-md">
+                    <div class="mb-6">
+                        <img src="./images/rectangle.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-2xl mb-4">Rectangle</h2>
+                    <p class="mb-4">Area (A) = W X L</p>
+                    <div class="flex mb-4 items-center gap-4">
+                        <input id="rectangle-w" class="w-14 p-2" type="number" placeholder="w">
+                        <span>cm</span>
+                        <input id="rectangle-l" class="w-14 p-2" type="number" placeholder="L">
+                        <span>cm</span>
+                    </div>
+                    <button id="btn-rectangle" class="bg-[#1090D8] text-white font-bold px-11 py-3 rounded-lg">Calculate</button>
+                </div>
+                <div class="text-center border-2 p-11 flex flex-col items-center rounded-lg drop-shadow-md">
+                    <div class="mb-6">
+                        <img src="./images/parallelogram.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-2xl mb-4">Parallelogram</h2>
+                    <p class="mb-4">Area (A) = b X h</p>
+                    <div class="flex mb-4 items-center gap-4">
+                        <input id="parallelogram-b" class="w-14 p-2" type="number" placeholder="b">
+                        <span>cm</span>
+                        <input id="parallelogram-h" class="w-14 p-2" type="number" placeholder="h">
+                        <span>cm</span>
+                    </div>
+                    <butto id="btn-parallelogram" class="bg-[#1090D8] text-white font-bold px-11 py-3 rounded-lg">Calculate</butto>
+                </div>
+                <div
+                    class="text-center bg-[#69C7F0] border-2 p-11 flex flex-col items-center rounded-lg drop-shadow-md">
+                    <div class="mb-6">
+                        <img src="./images/rhombus.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-2xl mb-4">Rhombus</h2>
+                    <p class="mb-4">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                    <div class="flex mb-4 items-center gap-4">
+                        <input id="rhombus-d1" class="w-14 p-2" type="number" placeholder="d">
+                        <span>cm</span>
+                        <input id="rhombus-d2" class="w-14 p-2" type="number" placeholder="d">
+                        <span>cm</span>
+                    </div>
+                    <button id="btn-rhombus" class="bg-[#1090D8] text-white font-bold px-11 py-3 rounded-lg">Calculate</button>
+                </div>
+                <div class="text-center border-2 p-11 flex flex-col items-center rounded-lg drop-shadow-md">
+                    <div class="mb-6">
+                        <img src="./images/pentagon.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-2xl mb-4">Pentagon</h2>
+                    <p class="mb-4">Area (A) = 0.5 X p X b</p>
+                    <div class="flex mb-4 items-center gap-4">
+                        <input id="pentagon-p" class="w-14 p-2" type="number" placeholder="p">
+                        <span>cm</span>
+                        <input id="pentagon-b" class="w-14 p-2" type="number" placeholder="b">
+                        <span>cm</span>
+                    </div>
+                    <button id="btn-pentagon" class="bg-[#1090D8] text-white font-bold px-11 py-3 rounded-lg">Calculate</button>
+                </div>
+                <div class="text-center border-2 p-11 flex flex-col items-center rounded-lg drop-shadow-md">
+                    <div class="mb-6">
+                        <img src="./images/ellipse.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-2xl mb-4">Ellipse</h2>
+                    <p class="mb-4">Area (A) = ab</p>
+                    <div class="flex mb-4 items-center gap-4">
+                        <input id="ellipse-a" class="w-14 p-2" type="number" placeholder="a">
+                        <span>cm</span>
+                        <input id="ellipse-b" class="w-14 p-2" type="number" placeholder="b">
+                        <span>cm</span>
+                    </div>
+                    <button id="btn-ellipse" class="bg-[#1090D8] text-white font-bold px-11 py-3 rounded-lg">Calculate</button>
+                </div>
+            </section>
+            <aside class="p-8 border-2">
+                <h1 class="font-bold mb-4"><u>Area Calculation</u></h1>
+                <div>
+                    <ol id="show-list" class="list-decimal">
+                        
+                    </ol>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <!-- Script js -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
