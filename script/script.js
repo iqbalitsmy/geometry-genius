@@ -22,10 +22,15 @@ function showList(n, name) {
     document.getElementById("show-list").appendChild(list);
 }
 
-// Location Change
+// Blogs
 document.getElementById("btn-blog").addEventListener("click", function () {
-    const url = location.hostname;
-    location.assign(url+"/blogs.html");
+    document.getElementById("blogs-section").setAttribute("class", "visible");
+    document.getElementById("main-section").setAttribute("class", "hidden");
+});
+// Home
+document.getElementById("btn-home").addEventListener("click", function () {
+    document.getElementById("blogs-section").setAttribute("class", "hidden");
+    document.getElementById("main-section").setAttribute("class", "visible");
 });
 
 // Get Element value by id
